@@ -1,0 +1,249 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  background: url("../img/bg.png");
+}
+
+.banner header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1820px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.banner header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  gap: 30px;
+}
+
+.banner header h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  color: #FFF;
+}
+
+.banner header hr {
+  width: 50px;
+  height: 2px;
+  background-color: #FFF;
+}
+
+.banner nav a{
+  font-family: "Raleway", sans-serif;
+  color: #FFF;
+  margin-right: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.banner header select {
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.banner header p {
+  font-family: "Raleway", sans-serif;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.banner header button {
+  font-family: "Raleway", sans-serif;
+  width: 175px;
+  height: 45px;
+  gap: 10px;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: #393333;
+  cursor: pointer;
+  background-color: #FFCF5C;
+  padding: 10px 30px;
+}
+
+.banner header .socialIcons img,
+.banner header img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.banner .subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1820px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.banner .subheader nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.banner section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.banner section h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  color: #FFF;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.banner section article {
+  display: flex;
+  align-items: center;
+  width: 1320px;
+  color: #FFF;
+}
+
+.banner section article div {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.banner section article div h4 {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.banner section article img {
+  width: 180px;
+  height: auto;
+  margin-right: 30px;
+}
+
+.dates,
+.info,
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  width: 1260px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+
+.dates img,
+.info img,
+.tags img {
+  width: 20px;
+  height: 20px;
+}
+
+.dates p span{
+  font-weight: 600;
+}
+
+.tags button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 20px;
+  color: #393333;
+  background-color: #FFCF5C;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 320px) {
+  .banner {
+    height: auto;
+  }
+  .banner header {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .banner header div {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .banner header h1 {
+    font-size: 24px;
+  }
+  .banner header hr,
+  .banner nav a,
+  .banner header select,
+  .banner header p,
+  .banner header button,
+  .banner header .socialIcons img,
+  .banner .subheader
+  {
+    display: none;
+  }
+  .banner header img {
+    width: 30px;
+  }
+  .banner section {
+    padding: 0 15px;
+  }
+  .banner section h1 {
+    font-size: 28px;
+  }
+  .banner section article {
+    width: 100%;
+  }
+  .banner section article div {
+    align-items: center;
+    text-align: center;
+  }
+  .banner section article div h4 {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .banner section article img {
+    width: 120px;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .dates,
+  .info,
+  .tags {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 5px;
+    font-size: 14px;
+  }
+  .tags button {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 6px 10px;
+    margin-right: 15px;
+  }
+}
